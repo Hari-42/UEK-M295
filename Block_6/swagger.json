@@ -1,0 +1,74 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Library API",
+    "description": "Documentation for Library API",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Book",
+      "description": "Endpoints zur Verwaltung von Büchern"
+    },
+    {
+      "name": "Lend",
+      "description": "Endpoints zur Verwaltung von Ausleihen"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {},
+  "definitions": {
+    "Book": {
+      "type": "object",
+      "properties": {
+        "isbn": {
+          "type": "string",
+          "example": "978-3-86680-192-9"
+        },
+        "title": {
+          "type": "string",
+          "example": "Harry Potter and the Philosopher's Stone"
+        },
+        "year": {
+          "type": "number",
+          "example": 1997
+        },
+        "author": {
+          "type": "string",
+          "example": "J.K. Rowling"
+        }
+      }
+    },
+    "Lend": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "example": 1
+        },
+        "customer_id": {
+          "type": "string",
+          "example": "123"
+        },
+        "isbn": {
+          "type": "string",
+          "example": "978-3-86680-192-9"
+        },
+        "borrowed_at": {
+          "type": "string",
+          "example": "2024-01-15T12:00:00Z"
+        }
+      }
+    }
+  }
+}
