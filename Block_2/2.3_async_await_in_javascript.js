@@ -8,4 +8,4 @@ async function addafterdelay(a, b, ms){
     console.log(`result after ${ms}ms: ${sum}`);
 }
 
-addafterdelay(3, 7, 2000);
+addafterdelay(3, 7, 8000);
